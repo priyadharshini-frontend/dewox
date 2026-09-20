@@ -1,0 +1,44 @@
+@import "tailwindcss";
+:root{
+    --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --primary:#346eec;
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+body, p, span, a, li {
+  font-family: var(--font-body);
+}
+
+html {
+  scrollbar-color: var(--primary) #07101f;
+  scrollbar-width: thin;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #07101f;
+}
+
+body::-webkit-scrollbar-thumb {
+  border: 2px solid #07101f;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #9fc1ff, var(--primary));
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #9fc1ff;
+}
+
+.title{
+   color: var(--primary);
+}
