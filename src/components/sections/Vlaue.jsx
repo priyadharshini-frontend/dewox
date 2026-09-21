@@ -2,40 +2,61 @@
 import { useEffect, useRef } from "react";
 import { animate, scroll, spring } from "motion";
 import { ReactLenis } from "lenis/react";
+import a1 from '../../assets/images/a1.png'
+import a2 from '../../assets/images/a2.png'
+import a3 from '../../assets/images/a3.png'
+import a4 from '../../assets/images/a4.png'
+import a5 from '../../assets/images/a5.png'
+import a6 from '../../assets/images/a6.png'
+import a7 from '../../assets/images/a7.png'
 
 const values = [
   {
-    word: "DESIGN",
+    word: "SaaS & Technology",
     description: "Every pixel earns its place.",
-    bg: "bg-[#346eec]",
+    bg:a1,
     image:
       "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop",
   },
   {
-    word: "ENGINEER",
+    word: "E-commerce & DTC",
     description: "Built to scale, not just to ship.",
-    bg: "bg-[#2f5fd1]",
+    bg: a2,
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop",
   },
   {
-    word: "AUTOMATE",
+    word: "Healthcare & Wellness",
     description: "Agents that work while you sleep.",
-    bg: "bg-[#274fb3]",
+    bg:a3,
     image:
       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=600&fit=crop",
   },
   {
-    word: "SCALE",
+    word: "Finance & Fintech",
     description: "From first user to millionth.",
-    bg: "bg-[#1f4096]",
+    bg: a4,
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=600&fit=crop",
   },
   {
-    word: "DELIVER",
+    word: "Logistics & Operations",
     description: "On time, every time, no excuses.",
-    bg: "bg-[#17307a]",
+    bg:a5,
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=600&fit=crop",
+  },
+   {
+    word: "Professional Services",
+    description: "On time, every time, no excuses.",
+    bg: a6,
+    image:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=600&fit=crop",
+  },
+   {
+    word: "And More...",
+    description: "On time, every time, no excuses.",
+    bg:a7,
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=600&fit=crop",
   },
@@ -81,7 +102,7 @@ export default function ValuesScroll() {
 
   return (
     <ReactLenis root>
-      <article id="values">
+      <article id="values" className="hidden md:block">
         <header
           data-aos="fade-up"
           data-aos-duration="800"
@@ -117,7 +138,18 @@ export default function ValuesScroll() {
             {values.map((v, i) => (
               <li
                 key={v.word}
-                className={`relative flex h-screen w-screen shrink-0 flex-col items-center justify-center overflow-hidden ${v.bg}`}
+                style={
+                  v.bg && !v.bg.startsWith("bg-")
+                    ? {
+                        backgroundImage: `url(${v.bg})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }
+                    : undefined
+                }
+                className={`relative flex h-screen w-screen shrink-0 flex-col items-center justify-center overflow-hidden ${
+                  v.bg?.startsWith("bg-") ? v.bg : ""
+                }`}
               >
                 <h2
                   ref={(el) => (headerRefs.current[i] = el)}
@@ -128,13 +160,7 @@ export default function ValuesScroll() {
                 <p className="relative z-10 mt-2 text-sm font-medium text-white/80 md:text-base">
                   {v.description}
                 </p>
-                <img
-                  src={v.image}
-                  className="absolute bottom-0 w-[280px] opacity-90 mix-blend-luminosity 2xl:w-[400px]"
-                  width={500}
-                  height={500}
-                  alt={v.word}
-                />
+               
               </li>
             ))}
           </ul>

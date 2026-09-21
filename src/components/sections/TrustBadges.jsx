@@ -1,38 +1,41 @@
 "use client";
 import { motion } from "motion/react";
-import { ShieldCheck, Award, Lock, BadgeCheck } from "lucide-react";
+import { ShieldCheck, Award, Lock, BadgeCheck,CheckCircle2,Star,Zap} from "lucide-react";
 
 const clients = [
-  "Northbeam",
-  "Solace",
-  "Fleet Logistics",
-  "Ledgerly",
-  "Marrow Studio",
-  "Assist AI",
-  "Vantage Co",
-  "Harborline",
+  "Aara Accessories",
+  "Emdad Logistics",
+  "LPTS ",
+  "TCU",
+  "Elena",
+  "AutoAxis",
+  "Lensify",
+  "HealCart",
+  "Aral trading desert",
+  "Brewora",
+  "Panda garments"
 ];
 
 const badges = [
+ {
+    icon:CheckCircle2,
+    label: "ISO 27001",
+    sublabel: "Certified",
+  },
   {
     icon: ShieldCheck,
-    label: "SOC 2 Type II",
+    label: "HIPAA",
     sublabel: "Compliant",
   },
   {
-    icon: Lock,
-    label: "GDPR",
-    sublabel: "Ready",
+    icon: Star,
+    label: "4.8/5",
+    sublabel: "Customer satisfaction",
   },
   {
-    icon: Award,
-    label: "4.9/5",
-    sublabel: "Avg. client rating",
-  },
-  {
-    icon: BadgeCheck,
-    label: "99.97%",
-    sublabel: "Agent uptime",
+    icon: Zap,
+    label: "99.9%",
+    sublabel: "System uptime",
   },
 ];
 

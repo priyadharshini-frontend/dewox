@@ -2,7 +2,7 @@
 :root{
     --font-heading: 'Space Grotesk', system-ui, sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, sans-serif;
-  --primary:#346eec;
+  --primary:#0013aa;
 }
 h1, h2, h3, h4 {
   font-family: var(--font-heading);

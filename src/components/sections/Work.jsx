@@ -61,85 +61,11 @@ const fadeUp = {
   visible: { opacity: 1, y: 0 },
 };
 
-const staggerContainer = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.1,
-    },
-  },
-};
 
-const ProjectCard = ({ project }) => {
-  return (
-    <motion.div
-      layout
-      variants={fadeUp}
-      initial="hidden"
-      animate="visible"
-      exit={{ opacity: 0, y: -16 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
-      whileHover={{ y: -6 }}
-      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-[#d9e2f2] bg-white"
-    >
-      <div className="relative aspect-[4/3] w-full overflow-hidden">
-        <motion.img
-          src={project.image}
-          alt={project.title}
-          className="h-full w-full object-cover"
-          whileHover={{ scale: 1.08 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-        />
 
-        {/* dark overlay on hover */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileHover={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07101f]/80 via-[#07101f]/10 to-transparent"
-        />
-
-        {/* view project pill, rises on hover */}
-        <motion.div
-          initial={{ y: 12, opacity: 0 }}
-          whileHover={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeOut" }}
-          className="pointer-events-none absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-semibold text-[#07101f]"
-        >
-          View project
-          <ArrowUpRight className="h-3.5 w-3.5" />
-        </motion.div>
-
-        {/* category tag, top right */}
-        <span className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#346eec] backdrop-blur-sm">
-          {project.category}
-        </span>
-      </div>
-
-      <div className="p-6">
-        <div className="flex items-start justify-between gap-4">
-          <h3 className="text-xl font-bold tracking-[-0.01em] text-[#07101f]">
-            {project.title}
-          </h3>
-          <span className="shrink-0 text-sm font-medium text-[#52627a]">
-            {project.year}
-          </span>
-        </div>
-        <p className="mt-2 text-sm leading-6 text-[#52627a]">
-          {project.description}
-        </p>
-      </div>
-    </motion.div>
-  );
-};
 
 const Work = () => {
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredProjects =
-    activeCategory === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeCategory);
+ 
 
   return (
     <section
@@ -162,7 +88,7 @@ const Work = () => {
               Our Work
             </p>
             <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
-              Selected projects
+              Highlighted Projects
             </h2>
             <p className="mt-5 text-base leading-7 text-[#52627a] md:text-lg">
               A sample of what happens when design, engineering, and AI work
@@ -170,51 +96,79 @@ const Work = () => {
             </p>
           </div>
 
-          {/* category filter */}
-          <div
-            data-aos="fade-left"
-            data-aos-delay="150"
-            data-aos-duration="800"
-            className="flex flex-wrap gap-2"
-          >
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                className="relative rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300"
-              >
-                {activeCategory === cat && (
-                  <motion.span
-                    layoutId="activePill"
-                    className="absolute inset-0 rounded-full bg-[#346eec]"
-                    transition={{ type: "spring", stiffness: 350, damping: 30 }}
-                  />
-                )}
-                <span
-                  className={`relative z-10 ${
-                    activeCategory === cat ? "text-white" : "text-[#52627a]"
-                  }`}
-                >
-                  {cat}
-                </span>
-              </button>
-            ))}
-          </div>
+      
         </div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+               {projects.map((p)=>(
+    <motion.div
+  layout
+  variants={fadeUp}
+  initial="hidden"
+  animate="visible"
+  exit={{ opacity: 0, y: -16 }}
+  transition={{ duration: 0.4, ease: "easeOut" }}
+  whileHover={{ y: -8 }}
+  className="group relative cursor-pointer overflow-hidden rounded-2xl border border-[#d9e2f2] bg-white shadow-sm transition-shadow duration-300 hover:shadow-[0_20px_60px_-15px_rgba(7,16,31,0.25)] hover:ring-1 hover:ring-[#346eec]/30"
+>
+  <div className="relative aspect-[4/3] w-full overflow-hidden">
+    <motion.img
+      src={p.image}
+      alt={p.title}
+      className="h-full w-full object-cover"
+      whileHover={{ scale: 1.08 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+    />
 
-        <motion.div
-          layout
-          data-aos="fade-up"
-          data-aos-delay="200"
-          data-aos-duration="800"
-          className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
-        >
-          <AnimatePresence mode="popLayout">
-            {filteredProjects.map((project) => (
-              <ProjectCard key={project.title} project={project} />
-            ))}
-          </AnimatePresence>
-        </motion.div>
+    {/* dark overlay on hover */}
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileHover={{ opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#07101f]/85 via-[#07101f]/15 to-transparent"
+    />
+
+    {/* view project pill, rises on hover */}
+    <motion.div
+      initial={{ y: 12, opacity: 0 }}
+      whileHover={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3, ease: "easeOut" }}
+      className="pointer-events-none absolute bottom-4 left-4 flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-xs font-semibold text-[#07101f] shadow-lg"
+    >
+      View project
+      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+    </motion.div>
+
+    {/* category tag, top right */}
+    <span className="absolute right-4 top-4 rounded-full bg-white/90 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-[#346eec] backdrop-blur-sm">
+      {p.category}
+    </span>
+
+    {/* index number, top left */}
+    <span className="absolute left-4 top-4 flex h-7 w-7 items-center justify-center rounded-full bg-[#07101f]/40 text-[11px] font-semibold text-white backdrop-blur-sm">
+      {String(p.id ?? "").padStart(2, "0")}
+    </span>
+  </div>
+
+  <div className="p-6">
+    <div className="flex items-start justify-between gap-4">
+      <h3 className="text-xl font-bold tracking-[-0.01em] text-[#07101f] transition-colors duration-300 group-hover:text-[#346eec]">
+        {p.title}
+      </h3>
+      <span className="shrink-0 text-sm font-medium text-[#52627a]">
+        {p.year}
+      </span>
+    </div>
+    <p className="mt-2 text-sm leading-6 text-[#52627a]">
+      {p.description}
+    </p>
+  </div>
+</motion.div>
+     ))}
+          
+        </div>
+   
+
+       
       </div>
     </section>
   );

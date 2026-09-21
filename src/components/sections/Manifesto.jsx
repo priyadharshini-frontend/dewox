@@ -32,7 +32,7 @@ const Manifesto = () => {
     <section
       ref={targetRef}
       id="manifesto"
-      className="relative h-[350vh] bg-white text-[#07101f]"
+      className="relative h-[350vh] bg-white text-[#07101f] hidden md:block"
     >
       <div className="sticky top-0 flex h-screen flex-col items-center justify-center overflow-hidden px-5">
                <span
@@ -42,7 +42,8 @@ const Manifesto = () => {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--primary)]  text-[var(--primary)]"/>
             <p className="text-[var(--primary)]">
-              Who We Believe
+              Built to Rise
+
             </p>
           </span>
        
@@ -50,9 +51,9 @@ const Manifesto = () => {
           style={{ skewX, x }}
           className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] tracking-[-0.02em] md:text-7xl md:leading-[0.85]"
         >
-          Design without engineering is decoration.
-          <span className="text-[#346eec]"> Engineering without design is friction. </span>
-          We build the two as one system, so your product looks as sharp as it performs, end to end, every single time.
+          Evolving with purpose.
+          <span className="text-[#346eec]"> Moving towards what’s next
+ </span>
         </motion.p>
 
         {/* scroll cue */}

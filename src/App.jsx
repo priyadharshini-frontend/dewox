@@ -49,23 +49,21 @@ function App() {
     <>
      <ReactLenis root>
       <div className=''>
-        <div className="h-screen overflow-hidden" data-aos="fade-in" data-aos-duration="1000">
+        <div id="home" className="h-screen overflow-hidden" data-aos="fade-in" data-aos-duration="1000">
           <Nav className="max-w-7xl mx-auto"/>
           <Hero/>
         </div>
         <div data-aos="fade-up" data-aos-duration="800">
           <About />
         </div>
-        <div data-aos="fade-up" data-aos-duration="800">
-          <Services/>
+          <div data-aos="fade-up" data-aos-duration="800">
+          <Trust/>
         </div>
         <Process/>
         <div data-aos="fade-up" data-aos-duration="800">
           <Work/>
         </div>
-        <div data-aos="fade-up" data-aos-duration="800">
-          <Trust/>
-        </div>
+      
         <div data-aos="fade-up" data-aos-duration="800">
           <AICapabilities/>
         </div>

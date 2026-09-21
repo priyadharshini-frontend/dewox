@@ -27,6 +27,7 @@ const services = [
   {
     icon: Bot,
     title: "AI Agents & Automation",
+    upcoming: true,
     description:
       "Custom AI agents and workflows that plug into your operations and run around the clock.",
     tags: ["LLM Agents", "Automation", "Integrations"],
@@ -88,9 +89,16 @@ const ServiceCard = ({ service, index }) => {
         <Icon className="h-7 w-7" strokeWidth={1.75} />
       </motion.div>
 
-      <h3 className="relative mt-6 text-xl font-bold tracking-[-0.01em] text-[#07101f] md:text-2xl">
-        {service.title}
-      </h3>
+      <div className="relative mt-6 flex flex-wrap items-center gap-2">
+        <h3 className="text-xl font-bold tracking-[-0.01em] text-[#07101f] md:text-2xl">
+          {service.title}
+        </h3>
+        {service.upcoming && (
+          <span className="rounded-full border border-[#346eec]/25 bg-[#346eec]/10 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#346eec]">
+            Upcoming
+          </span>
+        )}
+      </div>
 
       <p className="relative mt-3 text-sm leading-6 text-[#52627a] md:text-base">
         {service.description}
@@ -137,7 +145,7 @@ const ServiceCard = ({ service, index }) => {
 const Services = () => {
   return (
     <section
-      id="services"
+      
       data-aos="fade-up"
       data-aos-duration="800"
       className="relative overflow-hidden bg-white px-5 py-24 text-[#07101f] md:px-10 md:py-32"

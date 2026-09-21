@@ -2,61 +2,59 @@
 import { AnimatePresence, motion } from "motion/react";
 import { useEffect, useState } from "react";
 import { Quote, X } from "lucide-react";
+import s1 from '../../assets/images/s1.jpeg'
+import s2 from '../../assets/images/s2.jpeg'
+import s3 from '../../assets/images/s3.jpeg'
+import s4 from '../../assets/images/s4.jpeg'
+import s5 from '../../assets/images/s5.jpeg'
 
 export const testimonials = [
   {
     id: 1,
-    url: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop",
-    name: "Elena Marsh",
+    url:s5,
+    name: "Brand & Design",
     role: "VP Product, Northbeam",
     quote:
-      "dewOX rebuilt our entire onboarding flow in six weeks. Design and engineering felt like one team from day one — we never had to translate between them.",
+      "Identity systems, UI/UX, and visual language that make your product instantly recognizable.",
   },
   {
     id: 2,
-    url: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=400&auto=format&fit=crop",
-    name: "Marcus Webb",
+    url:s4,
+    name: "Web & Product Engineering",
     role: "Founder, Solace Wellness",
     quote:
-      "The brand system they delivered didn't just look sharp, it actually shipped. Every touchpoint from packaging to web felt considered.",
+      "Performant, scalable web apps built on modern stacks — from marketing sites to full platforms.",
   },
   {
     id: 3,
-    url: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=400&auto=format&fit=crop",
-    name: "Priya Nathan",
+    url:s3,
+    name: "AI Agents & Automation",
     role: "COO, Fleet Logistics",
     quote:
-      "Our dispatch agent now runs 24/7 with zero manual intervention. dewOX understood the operational constraints better than our own team did.",
+      "Custom AI agents and workflows that plug into your operations and run around the clock.",
   },
   {
     id: 4,
-    url: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=400&auto=format&fit=crop",
-    name: "Daniel Ostrow",
+    url: s2,
+    name: "Digital Marketing",
     role: "CEO, Ledgerly",
     quote:
-      "Fast, sharp, and genuinely invested in the outcome — not just the deliverable. They pushed back when it mattered.",
+      "We run full-funnel marketing for teams who need pipeline, not vanity metrics — SEO, paid acquisition, content, and lifecycle campaigns built on data, not guesswork.",
   },
   {
     id: 5,
-    url: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=400&auto=format&fit=crop",
-    name: "Sofia Reyes",
+    url:s1,
+    name: "AI Video Production",
     role: "Creative Director, Marrow Studio",
     quote:
-      "Rare to find a partner that treats design and code as one discipline. The handoff friction we were used to just disappeared.",
+      "We build AI-powered video pipelines that compress weeks of production into hours — generating on-brand, publish-ready content without sacrificing creative control.",
   },
-  {
-    id: 6,
-    url: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
-    name: "Tomas Berg",
-    role: "Head of AI, Assist AI",
-    quote:
-      "They shipped an agent trained on our docs that actually resolves tickets, not just deflects them. Support load dropped 40% in a month.",
-  },
+  
 ];
 
 function TrustGallery({ items, index, setIndex, setOpen }) {
   return (
-    <div className="mx-auto flex w-fit gap-1 pb-4 pt-6 md:gap-2">
+    <div className="mx-auto flex w-fit gap-1 pb-4 pt-6 md:gap-2" id="services">
       {items.map((item, i) => (
         <motion.div
           key={item.id}
@@ -65,10 +63,10 @@ function TrustGallery({ items, index, setIndex, setOpen }) {
             setIndex(i);
             setOpen(true);
           }}
-          className={`relative h-[220px] shrink-0 cursor-pointer overflow-hidden rounded-2xl transition-[width] duration-300 ease-in-out ${
+          className={`relative h-[320px] shrink-0 cursor-pointer overflow-hidden rounded-2xl transition-[width] duration-300 ease-in-out ${
             index === i
-              ? "w-[220px]"
-              : "w-[14px] sm:w-[20px] md:w-[30px] xl:w-[46px]"
+              ? "w-[320px]"
+              : "w-[14px] sm:w-[20px] md:w-[80px] xl:w-[80px]"
           }`}
         >
           <motion.img
@@ -88,10 +86,9 @@ function TrustGallery({ items, index, setIndex, setOpen }) {
                 transition={{ duration: 0.25, delay: 0.1 }}
                 className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#07101f]/85 via-[#07101f]/20 to-transparent p-4"
               >
-                <p className="text-sm font-semibold text-white">
+                <p className=" font-semibold text-[var(--primary)] decoration-solid text-xl">
                   {item.name}
                 </p>
-                <p className="text-xs text-white/75">{item.role}</p>
               </motion.div>
             )}
           </AnimatePresence>
@@ -135,15 +132,14 @@ const Trust = () => {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--primary)]  text-[var(--primary)]"/>
             <p className="text-[var(--primary)]">
-              Trusted By
+              What We Do
             </p>
           </span>
           <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
-            Teams who need more than a vendor
+Services built to move together
           </h2>
           <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-[#52627a] md:text-lg">
-            Hover to preview, click to read what it's actually like working
-            with us.
+           Five disciplines, one team. Every engagement draws on design, engineering, AI, and strategy working in lockstep — not in silos.
           </p>
         </div>
 
@@ -205,10 +201,9 @@ const Trust = () => {
                     transition={{ duration: 0.3, delay: 0.2 }}
                     className="mt-5"
                   >
-                    <p className="text-sm font-semibold text-[#07101f]">
+                    <p className="text-sm font-semibold text-[var(--primary)] decoration-solid text-xl">
                       {active.name}
                     </p>
-                    <p className="text-xs text-[#52627a]">{active.role}</p>
                   </motion.div>
                 </div>
               </motion.div>

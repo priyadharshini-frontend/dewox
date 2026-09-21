@@ -22,7 +22,7 @@ const testimonials = [
     company: "Solace Wellness",
     rating: 5,
     quote:
-      "The brand system they delivered didn't just look sharp, it actually shipped. Every touchpoint from packaging to web felt considered.",
+      "Fast, sharp, and genuinely invested in the outcome — not just the deliverable. They pushed back when it mattered.",
     avatar:
       "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
   },
@@ -33,21 +33,11 @@ const testimonials = [
     company: "Fleet Logistics",
     rating: 5,
     quote:
-      "Our dispatch agent now runs 24/7 with zero manual intervention. dewOX understood the operational constraints better than our own team did.",
+      "Working with dewOX was a smooth and professional experience. Their team was responsive, technically strong, and committed to delivering quality work on time. We are highly satisfied with the results and look forward to continuing our partnership.",
     avatar:
       "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop",
   },
-  {
-    id: 4,
-    name: "Daniel Ostrow",
-    role: "CEO",
-    company: "Ledgerly",
-    rating: 5,
-    quote:
-      "Fast, sharp, and genuinely invested in the outcome — not just the deliverable. They pushed back when it mattered, and we're better for it.",
-    avatar:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=200&auto=format&fit=crop",
-  },
+  
 ];
 
 const SWIPE_THRESHOLD = 120;
