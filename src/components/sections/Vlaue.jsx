@@ -129,7 +129,7 @@ export default function ValuesScroll() {
             data-aos-duration="800"
             className="relative text-center text-5xl font-bold tracking-[-0.02em] md:text-6xl"
           >
-            Industries we've shaped, one project at a time
+            Industries we've shaped
  <br />
             scroll to explore
           </h1>

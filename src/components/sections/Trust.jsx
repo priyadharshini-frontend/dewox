@@ -65,7 +65,7 @@ function TrustGallery({ items, index, setIndex, setOpen }) {
           }}
           className={`relative h-[320px] shrink-0 cursor-pointer overflow-hidden rounded-2xl transition-[width] duration-300 ease-in-out ${
             index === i
-              ? "w-[320px]"
+              ? "w-[200px] md:w-[320px]"
               : "w-[14px] sm:w-[20px] md:w-[80px] xl:w-[80px]"
           }`}
         >

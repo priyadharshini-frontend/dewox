@@ -132,7 +132,7 @@ const Footer = () => {
               <Sparkles className="h-3.5 w-3.5 text-[#6f9cff]" />
 
               <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9fc1ff]">
-                Let&apos;s build something
+                Let&apos;s build
               </span>
             </motion.div>
 

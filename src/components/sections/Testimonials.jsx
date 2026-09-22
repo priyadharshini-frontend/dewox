@@ -5,15 +5,15 @@ import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import b1 from '../../assets/images/b1.jpeg'
 import b2 from '../../assets/images/b2.jpeg'
 import b3 from '../../assets/images/b3.jpeg'
-import b4 from '../../assets/images/b4.png'
-import b5 from '../../assets/images/b5.png'
+import b4 from '../../assets/images/b4.jpeg'
+import b5 from '../../assets/images/b5.jpeg'
 
 
 
 const testimonials = [
   {
     id: 1,
-    name: "Wazeem",
+    name: "Muhammad Waseem",
     role: "Operation-director",
     company: "Emdad Logistics",
     rating: 5,
@@ -35,7 +35,7 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Marcus Webb",
+    name: "Marcus",
     role: "Founder",
     company: "AutoAxis",
     rating: 5,
@@ -46,9 +46,9 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Elena Rodriguez",
-    role: "Marketing Director",
-    company: "Brightwave Media",
+    name: "Raj Mohamed",
+    role: "Founder",
+    company: "TCU",
     rating: 5,
     quote:
       "They understood our brand voice from day one. The turn around was fast without cutting corners, and the results spoke for themselves.",
@@ -57,9 +57,9 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "David Chen",
-    role: "Co-Founder",
-    company: "Nimbus Logistics",
+    name: "Abi",
+    role: "Founder",
+    company: "Aara Accessories",
     rating: 5,
     quote:
       "Working with this team felt like having an extension of our own. They caught issues we hadn't even flagged and delivered ahead of schedule.",
