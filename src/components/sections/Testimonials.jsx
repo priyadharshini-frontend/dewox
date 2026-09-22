@@ -72,29 +72,29 @@ const TestimonialCard = ({ item, isFront, onSwipe }) => {
       })}
       transition={{ duration: 0.4, ease: "easeOut" }}
       whileTap={isFront ? { cursor: "grabbing" } : {}}
-      className={`absolute inset-0 flex flex-col justify-between rounded-3xl border border-[#d9e2f2] bg-white p-8 shadow-xl shadow-[#07101f]/5 md:p-10 ${
+      className={`absolute inset-0 flex flex-col justify-between rounded-3xl border border-[#d9e2f2] bg-white p-6 shadow-xl shadow-[#07101f]/5 md:p-10 ${
         isFront ? "cursor-grab" : "pointer-events-none"
       }`}
     >
       <div>
         <Quote className="h-8 w-8 text-[#346eec]" strokeWidth={1.5} />
-        <p className="mt-6 text-lg leading-8 text-[#07101f] md:text-xl">
+        <p className="mt-4 break-words text-base leading-7 text-[#07101f] md:mt-6 md:text-xl md:leading-8">
           {item.quote}
         </p>
       </div>
 
-      <div className="mt-8 flex items-center justify-between">
-        <div className="flex items-center gap-3">
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-4 md:mt-8 md:flex-nowrap">
+        <div className="flex min-w-0 items-center gap-3">
           <img
             src={item.avatar}
             alt={item.name}
             className="h-12 w-12 rounded-full object-cover"
           />
-          <div>
+          <div className="min-w-0">
             <p className="text-sm font-semibold text-[#07101f]">
               {item.name}
             </p>
-            <p className="text-xs text-[#52627a]">
+            <p className="break-words text-xs text-[#52627a]">
               {item.role}, {item.company}
             </p>
           </div>
@@ -208,7 +208,7 @@ const InteractiveTestimonials = () => {
           data-aos="fade-left"
           data-aos-delay="200"
           data-aos-duration="800"
-          className="relative h-[360px] w-full md:h-[380px]"
+          className="relative h-[470px] w-full sm:h-[400px] md:h-[380px]"
         >
           {stack
             .slice()

@@ -200,13 +200,7 @@ const Footer = () => {
               digital system.
             </p>
 
-            <a
-              href="mailto:info@dewoxsolution.com"
-              className="mt-6 inline-flex items-center gap-2 text-sm text-white/55 transition-colors hover:text-white"
-            >
-              <Mail className="h-3.5 w-3.5" />
-              info@dewoxsolution.com
-            </a>
+            
           </div>
 
           {/* Link columns */}
