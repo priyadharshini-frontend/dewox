@@ -11,6 +11,7 @@ import p6 from '../../assets/images/p6.png'
 
 const projects = [
   {
+    id:1,
     title: "Emdad Logistics",
     category: " Brand & Web",
     year: "2026",
@@ -18,6 +19,7 @@ const projects = [
     image:p1,
   },
   {
+    id:2,
     title: "Healcart",
     category: "App",
     year: "2026",
@@ -25,6 +27,7 @@ const projects = [
     image: p4,
   },
   {
+    id:3,
     title: "TCU",
     category: "CRM",
     year: "2025",
@@ -32,6 +35,7 @@ const projects = [
     image:p3,
   },
   {
+    id:4,
     title: "Shop Ease",
     category: "Billing Software",
     year: "2026",
@@ -39,6 +43,7 @@ const projects = [
     image:p6,
   },
   {
+    id:5,
     title: "AutoAxis",
     category: "Brand",
     year: "2026",
@@ -46,6 +51,7 @@ const projects = [
     image:p5,
   },
   {
+    id:6,
     title: "Elena",
     category: "Brand",
     year: "2026",

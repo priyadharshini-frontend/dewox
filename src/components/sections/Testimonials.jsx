@@ -5,6 +5,10 @@ import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import b1 from '../../assets/images/b1.jpeg'
 import b2 from '../../assets/images/b2.jpeg'
 import b3 from '../../assets/images/b3.jpeg'
+import b4 from '../../assets/images/b4.png'
+import b5 from '../../assets/images/b5.png'
+
+
 
 const testimonials = [
   {
@@ -39,6 +43,28 @@ const testimonials = [
       "Fast, sharp, and genuinely invested in the outcome — not just the deliverable. They pushed back when it mattered.",
     avatar:b1,
      location:"TamilNadu,India",
+  },
+  {
+    id: 4,
+    name: "Elena Rodriguez",
+    role: "Marketing Director",
+    company: "Brightwave Media",
+    rating: 5,
+    quote:
+      "They understood our brand voice from day one. The turn around was fast without cutting corners, and the results spoke for themselves.",
+    avatar: b4,
+    location: "Chennai, India",
+  },
+  {
+    id: 5,
+    name: "David Chen",
+    role: "Co-Founder",
+    company: "Nimbus Logistics",
+    rating: 5,
+    quote:
+      "Working with this team felt like having an extension of our own. They caught issues we hadn't even flagged and delivered ahead of schedule.",
+    avatar: b5,
+    location: "Karnataka, India",
   },
   
   
