@@ -164,7 +164,7 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="relative min-h-screen overflow-hidden bg-[#071629]">
+      <div className="relative min-h-screen overflow-hidden bg-[#071629] h-full">
         <div className="pointer-events-none absolute inset-0 z-0" />
 
         <ParticleCanvas />
@@ -245,9 +245,9 @@ export const Hero = () => {
 
               {/* label, inverts color once the fill sweeps under it */}
               <motion.span
-                animate={{ color: "#0a0a0a" }}
+                // animate={{ color: "#0a0a0a" }}
                 transition={{ duration: 0.3, delay: hovered ? 0.15 : 0 }}
-                className="relative z-10"
+                className="relative z-10 group-hover:text-white text-black"
               >
                 Let's Build Together
               </motion.span>

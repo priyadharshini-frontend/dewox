@@ -2,41 +2,45 @@
 import { motion, AnimatePresence, useMotionValue, useTransform } from "motion/react";
 import { useState } from "react";
 import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
+import b1 from '../../assets/images/b1.jpeg'
+import b2 from '../../assets/images/b2.jpeg'
+import b3 from '../../assets/images/b3.jpeg'
 
 const testimonials = [
   {
     id: 1,
-    name: "Elena Marsh",
-    role: "VP Product",
-    company: "Northbeam",
-    rating: 5,
-    quote:
-      "dewOX rebuilt our entire onboarding flow in six weeks. Design and engineering felt like one team from day one — we never had to translate between them.",
-    avatar:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=200&auto=format&fit=crop",
-  },
-  {
-    id: 2,
-    name: "Marcus Webb",
-    role: "Founder",
-    company: "Solace Wellness",
-    rating: 5,
-    quote:
-      "Fast, sharp, and genuinely invested in the outcome — not just the deliverable. They pushed back when it mattered.",
-    avatar:
-      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop",
-  },
-  {
-    id: 3,
-    name: "Priya Nathan",
-    role: "COO",
-    company: "Fleet Logistics",
+    name: "Wazeem",
+    role: "Operation-director",
+    company: "Emdad Logistics",
     rating: 5,
     quote:
       "Working with dewOX was a smooth and professional experience. Their team was responsive, technically strong, and committed to delivering quality work on time. We are highly satisfied with the results and look forward to continuing our partnership.",
-    avatar:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop",
+    avatar:b3,
+     location:"Dammam,KSA",
   },
+  {
+    id: 2,
+    name: "Elena",
+    role: "VP Product",
+    company: "Elena",
+    rating: 5,
+    quote:
+      "dewOX rebuilt our entire onboarding flow in six weeks. Design and engineering felt like one team from day one — we never had to translate between them.",
+    avatar:b2,
+    location:"TamilNadu,India",
+  },
+  {
+    id: 3,
+    name: "Marcus Webb",
+    role: "Founder",
+    company: "AutoAxis",
+    rating: 5,
+    quote:
+      "Fast, sharp, and genuinely invested in the outcome — not just the deliverable. They pushed back when it mattered.",
+    avatar:b1,
+     location:"TamilNadu,India",
+  },
+  
   
 ];
 
@@ -130,7 +134,7 @@ const InteractiveTestimonials = () => {
 
   return (
     <section
-      id="testimonials"
+      id="reviews"
       data-aos="fade-up"
       data-aos-duration="800"
       className="relative overflow-hidden bg-[#f7f9fd] px-5 py-24 text-[#07101f] md:px-10 md:py-32"

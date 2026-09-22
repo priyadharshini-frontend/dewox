@@ -12,7 +12,7 @@ export const testimonials = [
   {
     id: 1,
     url:s5,
-    name: "Brand & Design",
+    name: "Brand identity & systems",
     role: "VP Product, Northbeam",
     quote:
       "Identity systems, UI/UX, and visual language that make your product instantly recognizable.",
@@ -86,7 +86,7 @@ function TrustGallery({ items, index, setIndex, setOpen }) {
                 transition={{ duration: 0.25, delay: 0.1 }}
                 className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#07101f]/85 via-[#07101f]/20 to-transparent p-4"
               >
-                <p className=" font-semibold text-[var(--primary)] decoration-solid text-xl">
+                <p className=" font-semibold text-white decoration-solid text-xl">
                   {item.name}
                 </p>
               </motion.div>

@@ -10,7 +10,7 @@ export const Nav = () => {
         { label: 'Services', href: '#services' },
         { label: 'Work', href: '#work' },
         { label: 'Process', href: '#process' },
-        { label: 'Why Us', href: '#trust' },
+        { label: 'Why Us', href: '#reviews' },
     ]
 
   return (
@@ -39,7 +39,7 @@ export const Nav = () => {
                         href="mailto:info@dewoxsolution.com"
                         className="group relative isolate inline-flex h-10 w-40 items-center justify-center overflow-hidden rounded-full border border-[#6f9cff]/70 bg-[var(--primary)] px-3.5 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(52,110,236,0.35)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#4d82f2] hover:shadow-[0_12px_30px_rgba(52,110,236,0.5)] focus:outline-none focus:ring-2 focus:ring-[#9fc1ff] focus:ring-offset-2 focus:ring-offset-[#07101f] active:translate-y-0"
                     >
-                        <Liquid />
+
                         <span className="relative z-10 flex items-center gap-1.5 font-bold">
                             <Send className="h-4 w-4" />
                             Get In Touch

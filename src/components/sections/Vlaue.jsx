@@ -2,13 +2,13 @@
 import { useEffect, useRef } from "react";
 import { animate, scroll, spring } from "motion";
 import { ReactLenis } from "lenis/react";
-import a1 from '../../assets/images/a1.png'
-import a2 from '../../assets/images/a2.png'
-import a3 from '../../assets/images/a3.png'
-import a4 from '../../assets/images/a4.png'
-import a5 from '../../assets/images/a5.png'
-import a6 from '../../assets/images/a6.png'
-import a7 from '../../assets/images/a7.png'
+import a1 from '../../assets/images/a1.jpeg'
+import a2 from '../../assets/images/a2.jpeg'
+import a3 from '../../assets/images/a3.jpeg'
+import a4 from '../../assets/images/a4.jpeg'
+import a5 from '../../assets/images/a5.jpeg'
+import a6 from '../../assets/images/a6.jpeg'
+import a7 from '../../assets/images/a7.jpeg'
 
 const values = [
   {
@@ -21,21 +21,21 @@ const values = [
   {
     word: "E-commerce & DTC",
     description: "Built to scale, not just to ship.",
-    bg: a2,
+    bg: a3,
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=600&fit=crop",
   },
   {
     word: "Healthcare & Wellness",
     description: "Agents that work while you sleep.",
-    bg:a3,
+    bg:a4,
     image:
       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=600&fit=crop",
   },
   {
     word: "Finance & Fintech",
     description: "From first user to millionth.",
-    bg: a4,
+    bg: a2,
     image:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=600&fit=crop",
   },

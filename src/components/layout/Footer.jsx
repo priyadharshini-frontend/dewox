@@ -8,7 +8,7 @@ import {
   Mail,
   Sparkles,
 } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const footerLinks = {
   Company: [
@@ -29,19 +29,21 @@ const footerLinks = {
 
 const socials = [
   {
-    label: "LinkedIn",
-    href: "https://linkedin.com",
-    icon: FaLinkedin,
+    label: "Instagram",
+    href: "https://www.instagram.com/dewox_solution?stkn=aHNrOHF1aGpvdGZ0",
+    icon: FaInstagram,
+    external: true,
   },
   {
-    label: "Twitter / X",
-    href: "https://twitter.com",
-    icon: FaTwitter,
+    label: "Email",
+    href: "mailto:info@dewoxsolution.com",
+    icon: Mail,
   },
   {
-    label: "GitHub",
-    href: "https://github.com",
-    icon: FaGithub,
+    label: "WhatsApp",
+    href: "https://wa.me/918148196404",
+    icon: FaWhatsapp,
+    external: true,
   },
 ];
 
@@ -116,7 +118,7 @@ const Footer = () => {
 
         {/* ================= HERO CTA ================= */}
 
-        <div className="relative flex flex-1 flex-col justify-center py-16 md:py-24 lg:py-28">
+        <div className="relative flex flex-1 flex-col justify-center py-16 ">
           <div className="max-w-5xl">
             {/* Label */}
 
@@ -247,8 +249,10 @@ const Footer = () => {
                   <a
                     key={social.label}
                     href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    {...(social.external && {
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    })}
                     className="group inline-flex items-center gap-3 text-sm text-white/55 transition-colors hover:text-white"
                   >
                     <Icon className="h-3.5 w-3.5" />
