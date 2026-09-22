@@ -23,6 +23,7 @@ const footerLinks = {
     { label: "Web Engineering", href: "#services" },
     { label: "AI Agents", href: "#ai-agents" },
     { label: "Digital Marketing", href: "#services" },
+    { label: "AI Video Production", href: "#services" },
   ],
 };
 

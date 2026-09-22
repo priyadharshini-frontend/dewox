@@ -72,7 +72,7 @@ const ParticleCanvas = () => {
         const y = Math.random() * (canvas.height - size * 2) + size;
         const directionX = Math.random() * 0.3 - 0.15;
         const directionY = Math.random() * 0.3 - 0.15;
-        const color = 'rgba(93, 145, 255, 0.6)'; // matches --primary-ish blue
+        const color = 'rgba(93, 145, 255)'; // matches --primary-ish blue
         particles.push(new Particle(x, y, directionX, directionY, size, color));
       }
     };
@@ -194,7 +194,7 @@ export const Hero = () => {
             className="font-heading mx-auto max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] md:text-7xl"
           >
             Engineering the{' '}
-            <span className="text-[var(--primary)]">
+            <span className="text-[#9fc1ff]">
               digital backbone
             </span>{' '}
             of tomorrow&apos;s businesses

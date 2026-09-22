@@ -63,9 +63,9 @@ function App() {
         <div data-aos="fade-up" data-aos-duration="800">
           <InteractiveTestimonials/>
         </div>
-         <div data-aos="fade-up" data-aos-duration="800">
+         {/* <div data-aos="fade-up" data-aos-duration="800">
           <AIUpdates/>
-        </div>
+        </div> */}
         <StickyFooter/>
       </div>
     </ReactLenis>
