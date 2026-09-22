@@ -118,7 +118,8 @@ export default function ValuesScroll() {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--primary)]  text-[var(--primary)]"/>
             <p className="text-[var(--primary)]">
-              What Drives Us
+              Everywhere We've Been
+
             </p>
           </span>
          
@@ -128,8 +129,9 @@ export default function ValuesScroll() {
             data-aos-duration="800"
             className="relative text-center text-5xl font-bold tracking-[-0.02em] md:text-6xl"
           >
-            Five words we build by <br />
-            keep scrolling
+            Industries we've shaped, one project at a time
+ <br />
+            scroll to explore
           </h1>
         </header>
 

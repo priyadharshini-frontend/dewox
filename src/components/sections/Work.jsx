@@ -2,57 +2,55 @@
 import { motion, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-
-const categories = ["All", "Web", "Branding", "AI Agents"];
+import p1 from '../../assets/images/p1.jpeg'
+import p2 from '../../assets/images/p2.jpeg'
+import p3 from '../../assets/images/p3.jpeg'
+import p4 from '../../assets/images/p4.jpeg'
+import p5 from '../../assets/images/p5.jpeg'
+import p6 from '../../assets/images/p6.png'
 
 const projects = [
   {
-    title: "Northbeam Analytics",
-    category: "Web",
+    title: "Emdad Logistics",
+    category: " Brand & Web",
+    year: "2026",
+    description: "Complete visual identity and brand guidelines for a boutique hospitality group.",
+    image:p1,
+  },
+  {
+    title: "Marrow Build",
+    category: "App",
+    year: "2026",
+    description: "High-performance marketing site and booking flow built for scale.",
+    image: p4,
+  },
+  {
+    title: "Pipeline OS",
+    category: "CRM",
     year: "2025",
-    description: "Real-time analytics dashboard for e-commerce teams.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&auto=format&fit=crop&q=60",
+    description: "Custom CRM built for high-velocity sales teams to track deals end-to-end.",
+    image:p3,
   },
   {
-    title: "Solace Wellness",
-    category: "Branding",
-    year: "2024",
-    description: "Full identity system and packaging for a wellness brand.",
-    image:
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&auto=format&fit=crop&q=60",
+    title: "Shop Ease",
+    category: "Billing Software",
+    year: "2026",
+    description: "Automated invoicing and subscription billing platform for growing SaaS teams.",
+    image:p6,
   },
   {
-    title: "Fleet Copilot",
-    category: "AI Agents",
-    year: "2025",
-    description: "Autonomous agent handling logistics dispatch at scale.",
-    image:
-      "https://images.unsplash.com/photo-1600267175161-cfaa711b4a81?w=900&auto=format&fit=crop&q=60",
+    title: "AutoAxis",
+    category: "Brand",
+    year: "2026",
+    description: "Logo suite, packaging, and brand voice for an artisanal home goods label.",
+    image:p5,
   },
   {
-    title: "Ledgerly",
-    category: "Web",
-    year: "2024",
-    description: "Modern accounting platform for freelancers and studios.",
-    image:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=900&auto=format&fit=crop&q=60",
-  },
-  {
-    title: "Marrow Studio",
-    category: "Branding",
-    year: "2023",
-    description: "Identity and web presence for a design-led furniture studio.",
-    image:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&auto=format&fit=crop&q=60",
-  },
-  {
-    title: "Assist AI",
-    category: "AI Agents",
-    year: "2025",
-    description: "Customer support agent trained on your product docs.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&auto=format&fit=crop&q=60",
+    title: "Elena",
+    category: "Brand",
+    year: "2026",
+    description: "Rebrand and visual language refresh for a creative agency collective.",
+    image:p2,
   },
 ];
 
@@ -88,7 +86,7 @@ const Work = () => {
               Our Work
             </p>
             <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
-              Highlighted Projects
+              Recently Highlighted Projects
             </h2>
             <p className="mt-5 text-base leading-7 text-[#52627a] md:text-lg">
               A sample of what happens when design, engineering, and AI work

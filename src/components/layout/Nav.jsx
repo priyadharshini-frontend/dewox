@@ -10,7 +10,6 @@ export const Nav = () => {
         { label: 'Services', href: '#services' },
         { label: 'Work', href: '#work' },
         { label: 'Process', href: '#process' },
-        { label: 'About', href: '#about' },
         { label: 'Why Us', href: '#trust' },
     ]
 
@@ -37,7 +36,7 @@ export const Nav = () => {
 
                 <div className="hidden md:block">
                     <a
-                        href="#contact"
+                        href="mailto:info@dewoxsolution.com"
                         className="group relative isolate inline-flex h-10 w-40 items-center justify-center overflow-hidden rounded-full border border-[#6f9cff]/70 bg-[var(--primary)] px-3.5 py-2.5 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(52,110,236,0.35)] transition duration-200 hover:-translate-y-0.5 hover:bg-[#4d82f2] hover:shadow-[0_12px_30px_rgba(52,110,236,0.5)] focus:outline-none focus:ring-2 focus:ring-[#9fc1ff] focus:ring-offset-2 focus:ring-offset-[#07101f] active:translate-y-0"
                     >
                         <Liquid />
@@ -72,7 +71,7 @@ export const Nav = () => {
                                 </a>
                             ))}
                             <a
-                                href="#contact"
+                                href="mailto:info@dewoxsolution.com"
                                 onClick={() => setIsMenuOpen(false)}
                                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-[var(--primary)] px-4 py-2.5 text-center text-sm font-semibold text-white"
                             >

@@ -220,7 +220,7 @@ export const Hero = () => {
             className="flex flex-wrap justify-center gap-3 pt-2"
           >
             <motion.a
-              href="mailto:contact@dewox.com"
+              href="mailto:info@dewoxsolution.com"
               onHoverStart={() => setHovered(true)}
               onHoverEnd={() => setHovered(false)}
               whileTap={{ scale: 0.97 }}

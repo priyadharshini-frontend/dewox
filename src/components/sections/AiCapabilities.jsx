@@ -196,14 +196,15 @@ const AICapabilities = () => {
             ))}
           </ul>
 
-          <motion.button
+          <motion.a
+            href="mailto:info@dewoxsolution.com"
             whileHover={{ x: 4 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="mt-10 inline-flex items-center gap-2 rounded-full bg-[#346eec] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#2f5fd1]"
           >
             Talk to us about your workflow
             <ArrowRight className="h-4 w-4" />
-          </motion.button>
+          </motion.a>
         </div>
 
         <div
