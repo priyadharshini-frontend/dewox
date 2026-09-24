@@ -106,7 +106,7 @@ const TrustBadges = () => {
         </div>
 
         {/* trust badges strip */}
-        <div
+        {/* <div
           data-aos="fade-up"
           data-aos-delay="250"
           data-aos-duration="800"
@@ -137,7 +137,7 @@ const TrustBadges = () => {
               </motion.div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </section>
   );
