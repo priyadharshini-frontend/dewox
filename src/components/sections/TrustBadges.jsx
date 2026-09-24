@@ -17,11 +17,7 @@ const clients = [
 ];
 
 const badges = [
- {
-    icon:CheckCircle2,
-    label: "ISO 27001",
-    sublabel: "Certified",
-  },
+ 
   {
     icon: ShieldCheck,
     label: "HIPAA",
@@ -114,7 +110,7 @@ const TrustBadges = () => {
           data-aos="fade-up"
           data-aos-delay="250"
           data-aos-duration="800"
-          className="mt-20 grid grid-cols-2 gap-4 border-t border-[#d9e2f2] pt-16 sm:grid-cols-4"
+          className="mt-20 grid grid-cols-2 gap-4 border-t border-[#d9e2f2] pt-16 sm:grid-cols-3"
         >
           {badges.map((badge, i) => {
             const Icon = badge.icon;
