@@ -10,7 +10,23 @@ import s5 from '../../assets/images/s5.jpeg'
 
 export const testimonials = [
   {
-    id: 1,
+  id: 1,
+  url: s1,
+  name: "Custom CRM Development",
+  role: "Head of Sales, Growth-Stage SaaS",
+  quote:
+    "One CRM built around your sales process that tracks every lead, automates follow-ups, and shows your pipeline in real time.",
+},
+{
+  id: 2,
+  url: s2,
+  name: "ERP Implementation",
+  role: "Operations Director, Manufacturing",
+  quote:
+    "Inventory, procurement, finance, and HR on one ERP platform, so every team works from the same live data.",
+},
+  {
+    id: 3,
     url:s5,
     name: "Brand identity & systems",
     role: "VP Product, Northbeam",
@@ -18,7 +34,7 @@ export const testimonials = [
       "Identity systems, UI/UX, and visual language that make your product instantly recognizable.",
   },
   {
-    id: 2,
+    id: 4,
     url:s4,
     name: "Web & Product Engineering",
     role: "Founder, Solace Wellness",
@@ -26,29 +42,14 @@ export const testimonials = [
       "Performant, scalable web apps built on modern stacks — from marketing sites to full platforms.",
   },
   {
-    id: 3,
+    id: 5,
     url:s3,
     name: "AI Agents & Automation",
     role: "COO, Fleet Logistics",
     quote:
       "Custom AI agents and workflows that plug into your operations and run around the clock.",
   },
-  {
-    id: 4,
-    url: s2,
-    name: "Digital Marketing",
-    role: "CEO, Ledgerly",
-    quote:
-      "We run full-funnel marketing for teams who need pipeline, not vanity metrics — SEO, paid acquisition, content, and lifecycle campaigns built on data, not guesswork.",
-  },
-  {
-    id: 5,
-    url:s1,
-    name: "AI Video Production",
-    role: "Creative Director, Marrow Studio",
-    quote:
-      "We build AI-powered video pipelines that compress weeks of production into hours — generating on-brand, publish-ready content without sacrificing creative control.",
-  },
+  
   
 ];
 

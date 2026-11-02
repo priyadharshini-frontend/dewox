@@ -186,7 +186,7 @@ export const Hero = () => {
             Built for what is next
           </motion.span>
 
-          <motion.h1
+          {/* <motion.h1
             custom={1}
             variants={fadeUpVariants}
             initial="hidden"
@@ -210,7 +210,36 @@ export const Hero = () => {
             dewOX designs distinctive brands, builds scalable web and mobile
             products, and deploys autonomous AI agents that work for you
             around the clock.
-          </motion.p>
+          </motion.p> */}
+
+
+
+        <motion.h1
+  custom={1}
+  variants={fadeUpVariants}
+  initial="hidden"
+  animate="visible"
+  className="font-heading mx-auto max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] md:text-7xl"
+>
+  Custom{' '}
+  <span className="text-[#9fc1ff]">
+    CRM &amp; ERP
+  </span>{' '}
+  systems built to run your entire business
+</motion.h1>
+
+<motion.p
+  custom={2}
+  variants={fadeUpVariants}
+  initial="hidden"
+  animate="visible"
+  className="font-body mx-auto max-w-[60ch] text-center text-base leading-7 text-slate-200 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] md:text-lg"
+>
+  dewOX builds tailor-made CRM and ERP platforms that unify your sales,
+  inventory, finance, and operations in one place. Automate workflows,
+  eliminate manual work, and get real-time insights, with AI agents
+  working alongside your team around the clock.
+</motion.p>
 
           <motion.div
             custom={3}
