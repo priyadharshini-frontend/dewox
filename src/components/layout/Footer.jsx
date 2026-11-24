@@ -12,22 +12,31 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const footerLinks = {
   Company: [
-    { label: "About", href: "#about" },
-    { label: "Our Work", href: "#work" },
-    { label: "Process", href: "#process" },
+    { label: "About DEWOX", href: "#about" },
+    { label: "Our Capabilities", href: "#work" },
+    { label: "Industries", href: "#process" },
+    { label: "Our Work", href: "#contact" },
     { label: "Contact", href: "#contact" },
+
   ],
 
   Services: [
-    { label: "Brand & Design", href: "#services" },
-    { label: "Web Engineering", href: "#services" },
-    { label: "AI Agents", href: "#ai-agents" },
-    { label: "Digital Marketing", href: "#services" },
-    { label: "AI Video Production", href: "#services" },
+    { label: "Enterprise Systems", href: "#services" },
+    { label: "Custom Software", href: "#services" },
+    { label: "Automation & AI", href: "#ai-agents" },
+    { label: "Hardware & Software Integration", href: "#services" },
+    { label: "Industrial Solutions", href: "#services" },
+    { label: "Digital Solutions", href: "#services" },
   ],
 };
 
 const socials = [
+  {
+    label: "LinkedIn",
+    href: "https://www.instagram.com/dewox_solution?stkn=aHNrOHF1aGpvdGZ0",
+    icon: FaInstagram,
+    external: true,
+  },
   {
     label: "Instagram",
     href: "https://www.instagram.com/dewox_solution?stkn=aHNrOHF1aGpvdGZ0",
@@ -118,7 +127,7 @@ const Footer = () => {
 
         {/* ================= HERO CTA ================= */}
 
-        <div className="relative flex flex-1 flex-col justify-center py-16 ">
+        <div className="relative flex flex-1 flex-col justify-center items-center py-16 ">
           <div className="max-w-5xl">
             {/* Label */}
 
@@ -127,12 +136,12 @@ const Footer = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="mb-7 inline-flex items-center gap-2 rounded-full border border-[#346eec]/30 bg-[#346eec]/5 px-4 py-2"
+              className="mb-7 inline-flex items-center justify-center  gap-2 rounded-full border border-[#346eec]/30 bg-[#346eec]/5 px-4 py-2"
             >
               <Sparkles className="h-3.5 w-3.5 text-[#6f9cff]" />
 
               <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#9fc1ff]">
-                Let&apos;s build
+                LET'S ENGINEER WHAT'S NEXT
               </span>
             </motion.div>
 
@@ -147,7 +156,7 @@ const Footer = () => {
             >
              
               <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
-               Turn your idea into reality.
+                Have a business challenge? Let's build the solution
             </h2>
             </motion.h2>
 
@@ -158,8 +167,8 @@ const Footer = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-8 max-w-xl text-sm leading-7 text-white/45 md:text-base"
             >
-              From strategy and design to engineering and AI — we build
-              digital products that are designed to perform, scale and last.
+              Whether you need an enterprise management system, customized software, intelligent automation or an integrated technology solution, DEWOX is ready to understand your requirements.Let's discuss your vision and explore what we can build together.
+
             </motion.p>
 
             {/* CTA */}
@@ -174,7 +183,7 @@ const Footer = () => {
               whileTap={{ scale: 0.98 }}
               className="group mt-9 inline-flex items-center gap-4 rounded-full bg-[#346eec] px-6 py-3.5 text-sm font-semibold text-white shadow-[0_0_40px_rgba(52,110,236,0.18)] transition-all duration-300 hover:bg-[#467cf0] md:px-7 md:py-4 md:text-base"
             >
-              Start a conversation
+              Start a Project
 
               <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/15">
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -195,9 +204,8 @@ const Footer = () => {
               className="h-7 w-auto object-contain opacity-90"
             />
 
-            <p className="mt-5 max-w-[230px] text-sm leading-6 text-white/35">
-              Design, engineering and intelligence — built together as one
-              digital system.
+            <p className="mt-5 max-w-[300px] text-sm leading-6 text-white/35">
+             DEWOX is an integrated technology and business solutions company delivering enterprise software, customized digital systems, automation and connected technologies to help businesses operate smarter and grow stronger
             </p>
 
             
@@ -280,7 +288,10 @@ const Footer = () => {
         {/* ================= BOTTOM BAR ================= */}
 
         <div className="relative flex flex-col items-center justify-between gap-5 border-t border-white/[0.08] py-6 sm:flex-row">
-          <p className="text-[11px] text-white/30">
+          
+          <p className="text-[11px] text-white/30">Available for Enterprise & Business Projects
+</p>
+<p className="text-[11px] text-white/30">
             © {new Date().getFullYear()} dewOX. All rights reserved.
           </p>
 

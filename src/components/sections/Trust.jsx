@@ -12,42 +12,68 @@ export const testimonials = [
   {
   id: 1,
   url: s1,
-  name: "Custom CRM Development",
-  role: "Head of Sales, Growth-Stage SaaS",
+  name: "Enterprise Business Systems",
+  role: "Bring your entire business together",
   quote:
-    "One CRM built around your sales process that tracks every lead, automates follow-ups, and shows your pipeline in real time.",
+    "Manage departments, people, resources, transactions and operations through connected business systems designed around your organization.We develop comprehensive platforms that improve visibility, strengthen coordination and give decision-makers greater control.",
+    solution:[
+      "Enterprise Resource Planning (ERP)","Customer Relationship Management (CRM)","Supply Chain Management","Inventory & Warehouse Management","Finance & Accounting Systems","Human Resource Management","Business Intelligence & Reporting"
+    ]
 },
 {
   id: 2,
   url: s2,
-  name: "ERP Implementation",
-  role: "Operations Director, Manufacturing",
+  name: "Custom Software Development",
+  role: "If your business needs something different, we build it",
   quote:
-    "Inventory, procurement, finance, and HR on one ERP platform, so every team works from the same live data.",
+    "Standard software doesn't always address industry-specific requirements. We design and develop customized software around your workflows, business models and operational needs.From specialized business applications to large-scale enterprise platforms, we turn complex requirements into practical digital solutions.",
+     solution:[
+      "Custom Enterprise Applications","Industry-Specific Software","Web & Mobile Applications","Management Platforms","Customer & Vendor Portals","Data Management Systems","Custom Business Platforms"
+    ]
 },
   {
     id: 3,
-    url:s5,
-    name: "Brand identity & systems",
-    role: "VP Product, Northbeam",
+    url:s3,
+    name: "Business Automation & Artificial Intelligence",
+    role: "Make complex operations simpler",
     quote:
-      "Identity systems, UI/UX, and visual language that make your product instantly recognizable.",
+      "Reduce repetitive work, connect disconnected processes and help your teams work more efficiently through intelligent automation.We identify opportunities to automate everyday activities and develop solutions that improve speed, accuracy and productivity.",
+       solution:[
+        "Workflow Automation","AI-Powered Business Assistants","Intelligent Document Processing","Automated Reporting","Customer Service Automation","System-to-System Automation","AI Agent Development"
+    ]
   },
   {
     id: 4,
     url:s4,
-    name: "Web & Product Engineering",
-    role: "Founder, Solace Wellness",
+    name: "Hardware & Software Integration",
+    role: "Connect the physical world with digital intelligence",
     quote:
-      "Performant, scalable web apps built on modern stacks — from marketing sites to full platforms.",
+      "Business operations don't happen only on screens. They involve equipment, machines, devices, sensors and physical infrastructure.We bring hardware and software together to help businesses monitor, manage and improve their operations.",
+       solution:[
+        "Hardware & Software Integration","Industrial Monitoring Systems","Equipment Data Integration","IoT-Based Solutions"," Smart Monitoring & Control","Real-Time Data Collection","Customized Operational Displays"
+    ]
   },
   {
     id: 5,
     url:s3,
-    name: "AI Agents & Automation",
-    role: "COO, Fleet Logistics",
+    name: "Industrial & Enterprise Digital Solutions",
+    role: "Technology designed for demanding environments",
     quote:
-      "Custom AI agents and workflows that plug into your operations and run around the clock.",
+      "Industrial and enterprise operations require more than ordinary software. They need reliable, purpose-built solutions that understand operational complexity.We develop digital solutions that support industrial workflows, operational visibility, data management and connected environments.",
+       solution:[
+        "Industrial Software Solutions","Production & Operations Management","Equipment Monitoring"," Industrial Data Systems","Process Management Platforms","Customized Industry Solutions"
+    ]
+  },
+   {
+    id: 6,
+    url:s3,
+    name: " Digital Presence & Brand Communication",
+    role: "Build a stronger presence in the market",
+    quote:
+      "A business needs more than efficient internal operations. It also needs a professional identity and a digital presence that communicates its value.We provide creative and digital services that support your business's overall positioning.",
+       solution:[
+        "Corporate Brand Identity","Business Websites"," Digital Marketing","Corporate Presentations","Marketing & Communication Design"
+    ]
   },
   
   
@@ -133,14 +159,20 @@ const Trust = () => {
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--primary)]  text-[var(--primary)]"/>
             <p className="text-[var(--primary)]">
-              What We Do
+            OUR CAPABILITIES
             </p>
           </span>
           <h2 className="text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl">
-Services built to move together
+            Technology that works around your business.
+
           </h2>
-          <p className="mx-auto mt-5 max-w-lg text-base leading-7 text-[#52627a] md:text-lg">
-           Five disciplines, one team. Every engagement draws on design, engineering, AI, and strategy working in lockstep — not in silos.
+          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-[#52627a] md:text-lg">
+            No two businesses operate the same way. Your technology shouldn't be one-size-fits-all either.
+
+          </p>
+          <p className="mx-auto  max-w-xl text-base leading-7 text-[#52627a] md:text-lg">
+We bring together software, engineering and intelligent technologies to create solutions that address real operational challenges.
+
           </p>
         </div>
 
@@ -171,7 +203,7 @@ Services built to move together
             <div onClick={(e) => e.stopPropagation()} className="px-5">
               <motion.div
                 layoutId={`trust-${active.id}`}
-                className="relative flex w-[92vw] max-w-lg flex-col overflow-hidden rounded-2xl bg-white shadow-2xl sm:flex-row sm:items-stretch"
+                className="relative flex w-[92vw] max-w-3xl flex-col overflow-hidden rounded-2xl bg-white shadow-2xl sm:flex-row sm:items-stretch"
               >
                 <button
                   onClick={() => setOpen(false)}
@@ -183,11 +215,11 @@ Services built to move together
                 <img
                   src={active.url}
                   alt={active.name}
-                  className="h-48 w-full object-cover sm:h-auto sm:w-40"
+                  className="h-48 w-full object-cover sm:h-auto sm:w-80"
                 />
 
                 <div className="flex flex-1 flex-col justify-center p-6 sm:p-8">
-                  <Quote className="h-7 w-7 text-[#346eec]" strokeWidth={1.5} />
+                  <Quote className="h-7 w-10 text-[#346eec]" strokeWidth={1.5} />
                   <motion.p
                     initial={{ y: -8, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
@@ -205,6 +237,18 @@ Services built to move together
                     <p className="text-sm font-semibold text-[var(--primary)] decoration-solid text-xl">
                       {active.name}
                     </p>
+                     <p className="text-sm font-semibold text-dark decoration-solid text-lg">
+                      Solutions include
+                    </p>
+                    <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[#52627a]">
+
+                      {active.solution.map((item,i)=>(
+                          <li key={i}>{item}</li>
+
+                      ))}
+                    
+                    </ul>
+
                   </motion.div>
                 </div>
               </motion.div>

@@ -103,7 +103,7 @@ const About = () => {
             className="inline-flex w-fit items-center gap-2 rounded-full border border-[var(--primary)] px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-[var(--primary)]"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[var(--primary)]" />
-            Who We Are
+            BEYOND TECHNOLOGY. BUILT AROUND BUSINESS.
           </motion.span>
 
           <motion.h2
@@ -111,8 +111,7 @@ const About = () => {
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="mt-5 max-w-xl text-4xl font-bold leading-[1.05] tracking-[-0.02em] md:text-6xl"
           >
-            Where design, technology, and AI converge.
-
+            Every business has its complexities. We build solutions around them
           </motion.h2>
 
           <motion.div
@@ -121,14 +120,16 @@ const About = () => {
             className="mt-6 max-w-xl text-base leading-7 text-[#52627a] md:text-lg"
           >
             <p>
-             dewOX is a digital solutions focused on building strong brands, digital products, and intelligent technology solutions.
+Behind every successful business is a network of people, processes, systems and decisions.
 
             </p>
             <p className="mt-4">
-              We bring design, engineering, and AI together through a unified approach—ensuring every digital touchpoint is consistent, purposeful, and built to perform.
+But when these elements operate separately, opportunities are lost, operations become complicated and growth becomes harder to manage.
             </p>
-            <p className="mt-4">From brand identity and UI/UX design to websites, applications, and AI-powered solutions, we work across the entire digital ecosystem to transform ideas into scalable, high-quality experiences.</p>
-        <p className="mt-4">Our approach is simple: strategy informs design, design guides technology, and technology creates measurable value.</p>
+            <p className="mt-4">At DEWOX, we bring technology, engineering and business understanding together to address these challenges.</p>
+        <p className="mt-4">We design and develop customized software, connect business operations, automate processes and integrate hardware and digital systems to create solutions that work in the real world.</p>
+                  <p className="mt-4">Whether it's a single business process or an organization-wide transformation, we build around what your business actually needs.</p>
+
           </motion.div>
 
           {/* interactive tag list */}

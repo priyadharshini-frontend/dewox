@@ -183,7 +183,7 @@ export const Hero = () => {
             className="mx-auto inline-flex w-fit items-center gap-2 rounded-full border border-[#3273ff]/40 bg-[#0f1c35]/80 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-[#9fc1ff]"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-[#5d91ff] shadow-[0_0_12px_#5d91ff]" />
-            Built for what is next
+INTEGRATED TECHNOLOGY & BUSINESS SOLUTIONS
           </motion.span>
 
           {/* <motion.h1
@@ -221,11 +221,10 @@ export const Hero = () => {
   animate="visible"
   className="font-heading mx-auto max-w-4xl text-5xl font-bold leading-[1.02] tracking-[-0.02em] text-white drop-shadow-[0_4px_24px_rgba(0,0,0,0.8)] md:text-7xl"
 >
-  Custom{' '}
-  <span className="text-[#9fc1ff]">
-    CRM &amp; ERP
+ We engineer solutions that move
+  <span className="text-[#9fc1ff] ms-3">
+    businesses forward
   </span>{' '}
-  systems built to run your entire business
 </motion.h1>
 
 <motion.p
@@ -235,10 +234,7 @@ export const Hero = () => {
   animate="visible"
   className="font-body mx-auto max-w-[60ch] text-center text-base leading-7 text-slate-200 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)] md:text-lg"
 >
-  dewOX builds tailor-made CRM and ERP platforms that unify your sales,
-  inventory, finance, and operations in one place. Automate workflows,
-  eliminate manual work, and get real-time insights, with AI agents
-  working alongside your team around the clock.
+  From enterprise software and business management systems to intelligent automation and integrated technologies, we help businesses solve complex challenges, connect their operations and build for the future.
 </motion.p>
 
           <motion.div
@@ -278,7 +274,7 @@ export const Hero = () => {
                 transition={{ duration: 0.3, delay: hovered ? 0.15 : 0 }}
                 className="relative z-10 group-hover:text-white text-black"
               >
-                Let's Build Together
+               Discuss Your Project
               </motion.span>
             </motion.a>
           </motion.div>
